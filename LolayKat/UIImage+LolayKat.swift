@@ -26,15 +26,33 @@ public extension UIImage {
      color.
      - parameter color: Color of the search field background
      - parameter radius: The radius to round the corners
-     - parameter height: The height of the search bar
+     - parameter height: The height of the search bar. If `nil`, it will calculate a minimum height.
      - parameter padding: Padding for the image to be clear
     */
-    class func searchFieldBackgroundImageWithColor(_ color: UIColor, radius: CGFloat = 10.0, height: CGFloat = 38.0, padding: UIEdgeInsets = UIEdgeInsets(top: 4.0, left: 0.0, bottom: 4.0, right: 0.0)) -> UIImage? {
+    class func searchFieldBackgroundImageWithColor(_ color: UIColor, radius: CGFloat = 10.0, height: CGFloat? = 38.0, padding: UIEdgeInsets = UIEdgeInsets(top: 4.0, left: 0.0, bottom: 4.0, right: 0.0)) -> UIImage? {
+        assert(radius >= 0.0, "Radius must be zero or greater")
+        assert(padding.top >= 0.0, "Top padding must be zero or greater")
+        assert(padding.left >= 0.0, "Left padding must be zero or greater")
+        assert(padding.bottom >= 0.0, "Bottom padding must be zero or greater")
+        assert(padding.right >= 0.0, "Right padding must be zero or greater")
+
+        let minimumHeight = radius * 2.0 + 1.0 + padding.top + padding.bottom
+        
+        let imageHeight: CGFloat = {
+            if let height = height {
+                assert(height > 0.0, "Height must be zero or greater")
+                assert(height >= minimumHeight, "Height is not tall enough for the given radius, top and bottom padding needs to be at least \(minimumHeight)")
+                return height
+            } else {
+                return minimumHeight
+            }
+        }()
+        
         let width = radius * 2.0 + 1.0 + padding.left + padding.right
-        let bounds = CGSize(width: width, height: height)
+        let bounds = CGSize(width: width, height: imageHeight)
         
         let origin = CGPoint(x: padding.left, y: padding.top)
-        let size = CGSize(width: width - padding.left - padding.right, height: height - padding.top - padding.bottom)
+        let size = CGSize(width: width - padding.left - padding.right, height: imageHeight - padding.top - padding.bottom)
         let rect = CGRect(origin: origin, size: size)
         
         let path = UIBezierPath(roundedRect: rect, cornerRadius: radius).cgPath
@@ -63,6 +81,9 @@ public extension UIImage {
      - parameter size: The size of the image (typically recommend the default of 1x1 and let it be stretched
     */
     class func imageWithColor(_ color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) -> UIImage? {
+        assert(size.width > 0.0, "Width must be greater than 0")
+        assert(size.height > 0.0, "Height must be greater than 0")
+        
         let rect = CGRect(origin: .zero, size: size)
         UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
         color.setFill()
@@ -78,6 +99,10 @@ public extension UIImage {
      - parameter radius: The corner radius
     */
     func withRoundCorners(_ radius: CGFloat) -> UIImage? {
+        assert(radius > 0.0, "Radius must be greater than 0")
+        assert(radius * 2.0 <= self.size.height, "Radius must be at most half the height")
+        assert(radius * 2.0 <= self.size.width, "Radius must be at most half the width")
+
         UIGraphicsBeginImageContextWithOptions(size, false, scale)
         let rect = CGRect(origin: CGPoint.zero, size: size)
         let context = UIGraphicsGetCurrentContext()
