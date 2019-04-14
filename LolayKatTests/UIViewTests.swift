@@ -63,4 +63,18 @@ final class UIViewTests: XCTestCase {
         let viewCs = root.searchSubviews(viewType: ViewC.self)
         XCTAssert(viewCs.contains(viewC), "Search failed for a subview nested in another searched view")
     }
+    
+    func testAddLeadingToTrailingConstraints() {
+        let parent = UIView(frame: .zero)
+        let child = UIView(frame: .zero)
+        parent.addSubview(child)
+        
+        XCTAssertEqual(parent.constraints.count, 0)
+        XCTAssertEqual(child.constraints.count, 0)
+        
+        child.addLeadingToTrailingConstraints()
+        
+        XCTAssertEqual(parent.constraints.count, 4)
+        XCTAssertEqual(child.constraints.count, 0)
+    }
 }
