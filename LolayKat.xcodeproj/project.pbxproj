@@ -10,6 +10,7 @@
 		4D80D20C386E94FA07561740 /* libPods-LolayKatTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 221C6DD1F8C66FC656782313 /* libPods-LolayKatTests.a */; };
 		4E4884842266F64A002F63B6 /* UITabBarItem+LolayKat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4884832266F64A002F63B6 /* UITabBarItem+LolayKat.swift */; };
 		4E4884862266F8A6002F63B6 /* UITabBarItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4884852266F8A6002F63B6 /* UITabBarItemTests.swift */; };
+		4E4884992267A506002F63B6 /* LolayPaddedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4884982267A506002F63B6 /* LolayPaddedLabel.swift */; };
 		4E6479962261BC5500F63485 /* LolayKat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E64798C2261BC5500F63485 /* LolayKat.framework */; };
 		4E64799D2261BC5500F63485 /* LolayKat.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E64798F2261BC5500F63485 /* LolayKat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E6479A92261BE9200F63485 /* UIView+LolayKat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6479A82261BE9200F63485 /* UIView+LolayKat.swift */; };
@@ -36,6 +37,7 @@
 		4CBA3E809529D13E2284C86E /* libPods-LolayKat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LolayKat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E4884832266F64A002F63B6 /* UITabBarItem+LolayKat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+LolayKat.swift"; sourceTree = "<group>"; };
 		4E4884852266F8A6002F63B6 /* UITabBarItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarItemTests.swift; sourceTree = "<group>"; };
+		4E4884982267A506002F63B6 /* LolayPaddedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LolayPaddedLabel.swift; sourceTree = "<group>"; };
 		4E64798C2261BC5500F63485 /* LolayKat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LolayKat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E64798F2261BC5500F63485 /* LolayKat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LolayKat.h; sourceTree = "<group>"; };
 		4E6479902261BC5500F63485 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				4E6479AA2261C2EF00F63485 /* UIImage+LolayKat.swift */,
 				4E6479B82263A94A00F63485 /* LolayReplaceSegue.swift */,
 				4E4884832266F64A002F63B6 /* UITabBarItem+LolayKat.swift */,
+				4E4884982267A506002F63B6 /* LolayPaddedLabel.swift */,
 			);
 			path = LolayKat;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			files = (
 				4E6479AB2261C2EF00F63485 /* UIImage+LolayKat.swift in Sources */,
 				4E6479A92261BE9200F63485 /* UIView+LolayKat.swift in Sources */,
+				4E4884992267A506002F63B6 /* LolayPaddedLabel.swift in Sources */,
 				4E4884842266F64A002F63B6 /* UITabBarItem+LolayKat.swift in Sources */,
 				4E6479B92263A94A00F63485 /* LolayReplaceSegue.swift in Sources */,
 			);
