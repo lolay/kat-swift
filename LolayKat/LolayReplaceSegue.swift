@@ -21,11 +21,11 @@ import UIKit
  Instead of just pushing on top of the stack, this will replace the top controller with the destination controller.
  This can only be applied to a Show in a navigation controller. Otherwise it will do a standard segue.
  */
-class LolayReplaceSegue: UIStoryboardSegue {
+public class LolayReplaceSegue: UIStoryboardSegue {
     /// The depth that this should replace. Default is to just replace the top one.
-    @IBInspectable var depth: Int = 1
+    @IBInspectable public var depth: Int = 1
     
-    override func perform() {
+    override public func perform() {
         if self.depth > 0, let navigationController = self.source.navigationController {
             let count = navigationController.viewControllers.count
             if self.depth > count {

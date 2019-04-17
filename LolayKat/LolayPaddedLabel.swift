@@ -20,18 +20,18 @@ import UIKit
 /**
  Adds text padding to a UILabel
  */
-@IBDesignable class LolayPaddedLabel: UILabel {
-    @IBInspectable var topPadding: CGFloat = 0.0
-    @IBInspectable var bottomPadding: CGFloat = 0.0
-    @IBInspectable var leadingPadding: CGFloat = 0.0
-    @IBInspectable var trailingPadding: CGFloat = 0.0
+@IBDesignable public class LolayPaddedLabel: UILabel {
+    @IBInspectable public var topPadding: CGFloat = 0.0
+    @IBInspectable public var bottomPadding: CGFloat = 0.0
+    @IBInspectable public var leadingPadding: CGFloat = 0.0
+    @IBInspectable public var trailingPadding: CGFloat = 0.0
     
-    override func drawText(in rect: CGRect) {
+    override public func drawText(in rect: CGRect) {
         let insets = UIEdgeInsets(top: self.topPadding, left: self.leadingPadding, bottom: self.bottomPadding, right: self.trailingPadding)
         super.drawText(in: rect.inset(by: insets))
     }
     
-    override var intrinsicContentSize: CGSize {
+    override public var intrinsicContentSize: CGSize {
         let size = super.intrinsicContentSize
         let width = size.width + self.leadingPadding + self.trailingPadding
         let height = size.height + self.topPadding + self.bottomPadding
