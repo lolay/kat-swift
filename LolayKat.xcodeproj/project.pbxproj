@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4D80D20C386E94FA07561740 /* libPods-LolayKatTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 221C6DD1F8C66FC656782313 /* libPods-LolayKatTests.a */; };
 		4E4884842266F64A002F63B6 /* UITabBarItem+LolayKat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4884832266F64A002F63B6 /* UITabBarItem+LolayKat.swift */; };
 		4E4884862266F8A6002F63B6 /* UITabBarItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4884852266F8A6002F63B6 /* UITabBarItemTests.swift */; };
 		4E4884992267A506002F63B6 /* LolayPaddedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4884982267A506002F63B6 /* LolayPaddedLabel.swift */; };
@@ -18,7 +17,8 @@
 		4E6479AD2261CAB600F63485 /* UIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6479AC2261CAB600F63485 /* UIViewTests.swift */; };
 		4E6479AF2261CE7300F63485 /* UImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6479AE2261CE7300F63485 /* UImageTests.swift */; };
 		4E6479B92263A94A00F63485 /* LolayReplaceSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6479B82263A94A00F63485 /* LolayReplaceSegue.swift */; };
-		BA6D2A1B746C0CE341C91870 /* libPods-LolayKat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CBA3E809529D13E2284C86E /* libPods-LolayKat.a */; };
+		945C63875A95F6C80B7AE5DD /* libPods-LolayKat-LolayKatTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B52B95B0D06983E36B5B6FD /* libPods-LolayKat-LolayKatTests.a */; };
+		E4DEBCA9679FC3F6804F9B5A /* libPods-LolayKat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8891DEDC0A55EC8322AEB2AF /* libPods-LolayKat.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07010B03BC22B88668937422 /* Pods-LolayKatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LolayKatTests.debug.xcconfig"; path = "Target Support Files/Pods-LolayKatTests/Pods-LolayKatTests.debug.xcconfig"; sourceTree = "<group>"; };
-		221C6DD1F8C66FC656782313 /* libPods-LolayKatTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LolayKatTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CBA3E809529D13E2284C86E /* libPods-LolayKat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LolayKat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02F7959BA02B0305A84F82F3 /* Pods-LolayKat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LolayKat.release.xcconfig"; path = "Target Support Files/Pods-LolayKat/Pods-LolayKat.release.xcconfig"; sourceTree = "<group>"; };
+		1CB790AE00C6D049FB25A7F2 /* Pods-LolayKat-LolayKatTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LolayKat-LolayKatTests.debug.xcconfig"; path = "Target Support Files/Pods-LolayKat-LolayKatTests/Pods-LolayKat-LolayKatTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B52B95B0D06983E36B5B6FD /* libPods-LolayKat-LolayKatTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LolayKat-LolayKatTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E4884832266F64A002F63B6 /* UITabBarItem+LolayKat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+LolayKat.swift"; sourceTree = "<group>"; };
 		4E4884852266F8A6002F63B6 /* UITabBarItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarItemTests.swift; sourceTree = "<group>"; };
 		4E4884982267A506002F63B6 /* LolayPaddedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LolayPaddedLabel.swift; sourceTree = "<group>"; };
@@ -50,9 +50,9 @@
 		4E6479AC2261CAB600F63485 /* UIViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewTests.swift; sourceTree = "<group>"; };
 		4E6479AE2261CE7300F63485 /* UImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UImageTests.swift; sourceTree = "<group>"; };
 		4E6479B82263A94A00F63485 /* LolayReplaceSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LolayReplaceSegue.swift; sourceTree = "<group>"; };
-		B278293E206DFC24F3B23F4B /* Pods-LolayKatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LolayKatTests.release.xcconfig"; path = "Target Support Files/Pods-LolayKatTests/Pods-LolayKatTests.release.xcconfig"; sourceTree = "<group>"; };
-		E7FA6B3818A9E2554F036343 /* Pods-LolayKat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LolayKat.release.xcconfig"; path = "Target Support Files/Pods-LolayKat/Pods-LolayKat.release.xcconfig"; sourceTree = "<group>"; };
-		F64BDAC8CE7A735BF96AAEE4 /* Pods-LolayKat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LolayKat.debug.xcconfig"; path = "Target Support Files/Pods-LolayKat/Pods-LolayKat.debug.xcconfig"; sourceTree = "<group>"; };
+		8891DEDC0A55EC8322AEB2AF /* libPods-LolayKat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LolayKat.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9116D200F6FA266BC8A95109 /* Pods-LolayKat-LolayKatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LolayKat-LolayKatTests.release.xcconfig"; path = "Target Support Files/Pods-LolayKat-LolayKatTests/Pods-LolayKat-LolayKatTests.release.xcconfig"; sourceTree = "<group>"; };
+		96BC49CE91A1DADC7577E091 /* Pods-LolayKat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LolayKat.debug.xcconfig"; path = "Target Support Files/Pods-LolayKat/Pods-LolayKat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA6D2A1B746C0CE341C91870 /* libPods-LolayKat.a in Frameworks */,
+				E4DEBCA9679FC3F6804F9B5A /* libPods-LolayKat.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,18 +69,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E6479962261BC5500F63485 /* LolayKat.framework in Frameworks */,
-				4D80D20C386E94FA07561740 /* libPods-LolayKatTests.a in Frameworks */,
+				945C63875A95F6C80B7AE5DD /* libPods-LolayKat-LolayKatTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		42E85707D79EE8F5947E0797 /* Frameworks */ = {
+		470393F31B16E8FE446DA82C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4CBA3E809529D13E2284C86E /* libPods-LolayKat.a */,
-				221C6DD1F8C66FC656782313 /* libPods-LolayKatTests.a */,
+				8891DEDC0A55EC8322AEB2AF /* libPods-LolayKat.a */,
+				2B52B95B0D06983E36B5B6FD /* libPods-LolayKat-LolayKatTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -94,7 +94,7 @@
 				4E6479992261BC5500F63485 /* LolayKatTests */,
 				4E64798D2261BC5500F63485 /* Products */,
 				B73DA1233382D079A7668B76 /* Pods */,
-				42E85707D79EE8F5947E0797 /* Frameworks */,
+				470393F31B16E8FE446DA82C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,10 +135,10 @@
 		B73DA1233382D079A7668B76 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F64BDAC8CE7A735BF96AAEE4 /* Pods-LolayKat.debug.xcconfig */,
-				E7FA6B3818A9E2554F036343 /* Pods-LolayKat.release.xcconfig */,
-				07010B03BC22B88668937422 /* Pods-LolayKatTests.debug.xcconfig */,
-				B278293E206DFC24F3B23F4B /* Pods-LolayKatTests.release.xcconfig */,
+				96BC49CE91A1DADC7577E091 /* Pods-LolayKat.debug.xcconfig */,
+				02F7959BA02B0305A84F82F3 /* Pods-LolayKat.release.xcconfig */,
+				1CB790AE00C6D049FB25A7F2 /* Pods-LolayKat-LolayKatTests.debug.xcconfig */,
+				9116D200F6FA266BC8A95109 /* Pods-LolayKat-LolayKatTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E6479A02261BC5500F63485 /* Build configuration list for PBXNativeTarget "LolayKat" */;
 			buildPhases = (
-				823ED7A7228695DE150F8A1A /* [CP] Check Pods Manifest.lock */,
+				CA8413B76384A09328153A62 /* [CP] Check Pods Manifest.lock */,
 				4E6479872261BC5500F63485 /* Headers */,
 				4E6479882261BC5500F63485 /* Sources */,
 				4E6479892261BC5500F63485 /* Frameworks */,
@@ -180,7 +180,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E6479A32261BC5500F63485 /* Build configuration list for PBXNativeTarget "LolayKatTests" */;
 			buildPhases = (
-				C321D35228706E5EA7044CFA /* [CP] Check Pods Manifest.lock */,
+				ADF8B793A256F5D70BD74927 /* [CP] Check Pods Manifest.lock */,
 				4E6479912261BC5500F63485 /* Sources */,
 				4E6479922261BC5500F63485 /* Frameworks */,
 				4E6479932261BC5500F63485 /* Resources */,
@@ -250,7 +250,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		823ED7A7228695DE150F8A1A /* [CP] Check Pods Manifest.lock */ = {
+		ADF8B793A256F5D70BD74927 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LolayKat-LolayKatTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA8413B76384A09328153A62 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -266,28 +288,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-LolayKat-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C321D35228706E5EA7044CFA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LolayKatTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -454,7 +454,7 @@
 		};
 		4E6479A12261BC5500F63485 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F64BDAC8CE7A735BF96AAEE4 /* Pods-LolayKat.debug.xcconfig */;
+			baseConfigurationReference = 96BC49CE91A1DADC7577E091 /* Pods-LolayKat.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -484,7 +484,7 @@
 		};
 		4E6479A22261BC5500F63485 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7FA6B3818A9E2554F036343 /* Pods-LolayKat.release.xcconfig */;
+			baseConfigurationReference = 02F7959BA02B0305A84F82F3 /* Pods-LolayKat.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -513,7 +513,7 @@
 		};
 		4E6479A42261BC5500F63485 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 07010B03BC22B88668937422 /* Pods-LolayKatTests.debug.xcconfig */;
+			baseConfigurationReference = 1CB790AE00C6D049FB25A7F2 /* Pods-LolayKat-LolayKatTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -533,7 +533,7 @@
 		};
 		4E6479A52261BC5500F63485 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B278293E206DFC24F3B23F4B /* Pods-LolayKatTests.release.xcconfig */;
+			baseConfigurationReference = 9116D200F6FA266BC8A95109 /* Pods-LolayKat-LolayKatTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
