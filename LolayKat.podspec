@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'LolayKat'
-  s.version = '4.3.0'
+  s.version = '4.3'
   s.license = {:type => 'Apache License, Version 2.0', :file => 'LICENSE'}
   s.summary = 'Lolay UIKit Founation'
   s.homepage = 'https://github.com/lolay/kat-swift'
