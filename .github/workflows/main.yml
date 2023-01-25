@@ -19,5 +19,4 @@ jobs:
     - name: Xcode Versions
       run: xcodebuild -version -sdk
     - name: Build and Test
-      run: xcodebuild -workspace LolayKat.xcworkspace -scheme LolayKat -sdk iphonesimulator16.2 -destination "platform=iOS Simulator,OS=16.2,name=iPhone 14" clean build test | xcpretty
-      working-diretory: LolayKat
+      run: cd LolayKat; xcodebuild -workspace LolayKat.xcworkspace -scheme LolayKat -sdk iphonesimulator16.2 -destination "platform=iOS Simulator,OS=16.2,name=iPhone 14" clean build test | xcpretty
