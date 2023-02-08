@@ -24,8 +24,8 @@ import SwiftUI
  [Core Graphics Tutorial: Arcs and Paths
 ](https://www.kodeco.com/349664-core-graphics-tutorial-arcs-and-paths)
  */
-struct Arc: Shape {
-    func path(in rect: CGRect) -> Path {
+public struct Arc: Shape {
+    public func path(in rect: CGRect) -> Path {
         // Don't forget Core Graphics origin is bottom left with Y going "up"
         // While UI Kit origin is top left with Y going "down"
         let width = rect.width
