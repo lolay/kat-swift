@@ -24,7 +24,7 @@ import SwiftUI
  [Core Graphics Tutorial: Arcs and Paths
 ](https://www.kodeco.com/349664-core-graphics-tutorial-arcs-and-paths)
  */
-public struct Arc: Shape {
+public struct LolayArc: Shape {
     public init() { }
     
     public func path(in rect: CGRect) -> Path {

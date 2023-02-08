@@ -18,11 +18,11 @@ import XCTest
 @testable import LolayKat
 import os.log
 
-final class ArcTests: XCTestCase {
-    private static let log = Logger(subsystem: "LolayKat", category: "ArcTests")
+final class LolayArcTests: XCTestCase {
+    private static let log = Logger(subsystem: "LolayKat", category: "LolayArcTests")
     /// Simple test that really just makes sure it doesn't break. Not sure how to verify Path output.
     func testPath() {
-        let arc = Arc()
+        let arc = LolayArc()
         let normalRect = CGRect(x: -10.0, y: 20.0, width: 150.0, height: 50.0)
         let normalPath = arc.path(in: normalRect)
         Self.log.debug("normalPath=\(String(describing: normalPath), privacy: .public)");
