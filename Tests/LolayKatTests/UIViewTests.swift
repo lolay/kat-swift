@@ -1,5 +1,5 @@
 //
-//  Copyright © 2019, 2023 Lolay, Inc.
+//  Copyright © 2019, 2023, 2026 Lolay, Inc.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -14,10 +14,11 @@
 //  limitations under the License.
 //
 
+#if canImport(UIKit)
 import XCTest
 @testable import LolayKat
 
-final class UIViewTests: XCTestCase {
+@MainActor final class UIViewTests: XCTestCase {
     class ViewA: UIView { }
     class ViewB: UIView { }
     class ViewC: UIView { }
@@ -78,3 +79,4 @@ final class UIViewTests: XCTestCase {
         XCTAssertEqual(child.constraints.count, 0)
     }
 }
+#endif

@@ -1,5 +1,5 @@
 //
-//  Copyright © 2019, 2023 Lolay, Inc.
+//  Copyright © 2019, 2023, 2026 Lolay, Inc.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 //  limitations under the License.
 //
 
-import Foundation
+#if canImport(UIKit)
 import UIKit
 
 public extension UIImage {
@@ -74,7 +74,7 @@ public extension UIImage {
         let resizableImage = rawImage!.resizableImage(withCapInsets: capInsets)
         return resizableImage
     }
-    
+
     /**
      Draws an image that is entirely filled with the given color
      - parameter color: The color to fill the image with
@@ -83,17 +83,17 @@ public extension UIImage {
     class func imageWithColor(_ color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) -> UIImage? {
         assert(size.width > 0.0, "Width must be greater than 0")
         assert(size.height > 0.0, "Height must be greater than 0")
-        
+
         let rect = CGRect(origin: .zero, size: size)
         UIGraphicsBeginImageContextWithOptions(rect.size, false, 0.0)
         color.setFill()
         UIRectFill(rect)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
+
         return image
     }
-    
+
     /**
      Clips the corners of an image using the given radius.
      - parameter radius: The corner radius
@@ -107,17 +107,18 @@ public extension UIImage {
         let rect = CGRect(origin: CGPoint.zero, size: size)
         let context = UIGraphicsGetCurrentContext()
         let path = UIBezierPath(roundedRect: rect, cornerRadius: radius)
-        
+
         context?.beginPath()
         context?.addPath(path.cgPath)
         context?.closePath()
         context?.clip()
-        
+
         draw(at: CGPoint.zero)
-        
+
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext();
-        
+
         return image;
     }
 }
+#endif

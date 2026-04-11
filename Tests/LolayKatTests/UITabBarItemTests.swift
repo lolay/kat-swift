@@ -1,5 +1,5 @@
 //
-//  Copyright © 2019, 2023 Lolay, Inc.
+//  Copyright © 2019, 2023, 2026 Lolay, Inc.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -13,9 +13,10 @@
 //  See the License for the specific language governing permissions and
 //  limitations under the License.
 //
+#if canImport(UIKit)
 import XCTest
 
-final class UITabBarItemTests: XCTestCase {
+@MainActor final class UITabBarItemTests: XCTestCase {
     func testBadgeValue() {
         let item = UITabBarItem(title: nil, image: nil, tag: 0)
         XCTAssertNil(item.badgeValue)
@@ -33,3 +34,4 @@ final class UITabBarItemTests: XCTestCase {
         XCTAssertEqual(item.badgeValue, "99")
     }
 }
+#endif
