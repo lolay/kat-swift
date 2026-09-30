@@ -14,7 +14,7 @@
 //  limitations under the License.
 //
 
-#if canImport(UIKit)
+#if canImport(UIKit) && !os(watchOS)
 import XCTest
 @testable import LolayKat
 
